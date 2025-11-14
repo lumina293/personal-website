@@ -1,342 +1,136 @@
----
+# My 14-Day JavaScript Journey: Building a Family Finance Dashboard
 
-# **Week 1 — Core JavaScript & Data Handling**
+## My Goal
 
----
+To learn JavaScript fundamentals by building a personal financial dashboard that can analyze and visualize family
+spending across multiple accounts. My ultimate goal isn't to become a Software Engineer, but to equip myself with
+technical fundamentals so that I can collaborate more efficiently with engineers in my upcoming journey as an IT
+Business Analyst.
 
-### **Day 1 – JavaScript Basics**
+### Supports (My unfair advantages)
 
-**Goal:** Learn JavaScript fundamentals to handle simple variables, functions, and console testing.
+Starting from zero, this plan wouldn't be possible without direct mentorship from my husband, a seasoned software
+engineer. He set up the boilerplate, so I could jump straight into coding and see immediate results. He's always
+available to explain technical concepts in terms I understand best. I also leverage free AI tools like Deepseek,
+ChatGPT, and Copilot as learning companions.
 
-**Learning Checklist (3h total)**
+## The Stack
 
-* [ ] JS syntax, `let`, `const` (30 min) – [MDN JS Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
-* [ ] Data types: string, number, boolean, array, object (30 min)
-* [ ] Functions and arrow functions (30 min)
-* [ ] Conditionals and loops (45 min)
-* [ ] Console testing, `console.log`, debugging basics (45 min)
-
-**Project Tasks Checklist (3h total)**
-
-* [ ] Create sample transaction array including merchant info
-* [ ] Write functions to calculate total income, total expense, and saving
-* [ ] Test calculations in console with sample data
-
-**Recap**
-
-* Understand JS syntax and how it runs in the browser
-* Able to define variables, functions, and arrays
-* Can compute totals and display them via console
+- **Language:** JavaScript
+- **Framework:** Next.js (with help on setup)
+- **Data Source:** Excel/CSV files
+- **Visualization:** Charting library
 
 ---
 
-### **Day 2 – Functions, Arrays & Loops**
+## 🗓️ Daily Learning Plan
 
-**Goal:** Process transaction arrays dynamically using loops and array methods.
+### **Day 1: Speaking the Computer's Language**
 
-**Learning Checklist (3h total)**
+- [ ] Learn how computers store data using **variables** (`const`, `let`)
+- [ ] Understand different **data types** (numbers, strings, booleans)
+- [ ] Practice with `console.log()` to see my results
+- [ ] Create variables for sample financial transactions
 
-* [ ] Arrays: `.map()`, `.filter()`, `.reduce()` (90 min) – [JavaScript.info Arrays](https://javascript.info/array)
-* [ ] Loops (`for`, `for...of`, `forEach`) (45 min)
-* [ ] Conditional logic in loops (45 min)
+### **Day 2: Organizing Financial Data**
 
-**Project Tasks Checklist (3h total)**
+- [ ] Structure transaction data using **objects** (`{}`)
+- [ ] Group transactions into **arrays** (`[]`)
+- [ ] Access and modify data in arrays and objects
+- [ ] Create a sample bank statement with multiple transactions
 
-* [ ] Filter transactions into income vs expenses
-* [ ] Group transactions by category
-* [ ] Group transactions by merchant and sum totals
+### **Day 3: Making Smart Decisions with Data**
 
-**Recap**
+- [ ] Use **if/else statements** to categorize transactions
+- [ ] Apply **comparison operators** to filter data
+- [ ] Loop through transactions using **for loops**
+- [ ] Separate expenses from income automatically
 
-* Able to filter, map, and reduce transaction data
-* Can summarize totals by category and merchant
-* Loops and array methods used to transform data
+### **Day 4: Creating Reusable Financial Tools**
 
----
+- [ ] Write **functions** to calculate totals
+- [ ] Use **parameters** to make functions flexible
+- [ ] **Return** values from functions
+- [ ] Create a function that calculates total expenses
 
-### **Day 3 – Objects & JSON**
+### **Day 5: Transforming Financial Data**
 
-**Goal:** Work with nested objects and structure data for analysis.
+- [ ] Process arrays with **.map()** to extract specific data
+- [ ] Filter transactions with **.filter()**
+- [ ] Summarize data with **.reduce()**
+- [ ] Calculate expenses by category using array methods
 
-**Learning Checklist (3h total)**
+### **Day 6: Handling Real-World Data Timing**
 
-* [ ] Objects, key-value access, nested objects (60 min)
-* [ ] JSON: stringify and parse (45 min)
-* [ ] Using `.reduce()` for aggregations (45 min)
-* [ ] Testing and debugging object outputs (30 min)
+- [ ] Understand **asynchronous code** with Promises
+- [ ] Use **async/await** for readable code
+- [ ] Practice with the **Fetch API**
+- [ ] Simulate loading financial data
 
-**Project Tasks Checklist (3h total)**
+### **Day 7: Building My Data Processing Engine**
 
-* [ ] Build `analyzeTransactions()` to output totals, category sums, merchant sums
-* [ ] Test function with multiple sample transactions
-* [ ] Print structured summary in console
+- [ ] Combine all concepts to create core functions
+- [ ] Write `getTotalIncome()`, `getTotalExpenses()`
+- [ ] Create `getSavings()` and `getExpensesByCategory()`
+- [ ] Test with sample transaction data
 
-**Recap**
+### **Day 8: Understanding Components & State**
 
-* Can structure analyzed data in objects
-* Understand JSON and aggregation with reduce
-* Prepared dataset ready for later visualization
+- [ ] Learn the **component-based** mindset
+- [ ] Use **useState** to manage data in components
+- [ ] Understand **JSX** syntax
+- [ ] Create a transaction list component
 
----
+### **Day 9: Implementing File Upload**
 
-### **Day 4 – File Parsing (CSV/Excel)**
+- [ ] Build a file input component
+- [ ] Handle **file selection events**
+- [ ] Access the **File API**
+- [ ] Create the UI for uploading bank statements
 
-**Goal:** Read real CSV and Excel files from browser.
+### **Day 10: Parsing Excel Files**
 
-**Learning Checklist (3h total)**
+- [ ] Integrate the **xlsx library**
+- [ ] Convert Excel data to JSON
+- [ ] Map raw data to my transaction structure
+- [ ] Update app state with uploaded transactions
 
-* [ ] File input elements (`<input type="file" multiple />`) (45 min)
-* [ ] FileReader API basics (30 min)
-* [ ] PapaParse for CSV parsing (60 min) – [PapaParse Docs](https://www.papaparse.com/docs)
-* [ ] SheetJS for Excel parsing (45 min) – [SheetJS Docs](https://docs.sheetjs.com/)
+### **Day 11: Visualizing Spending Categories**
 
-**Project Tasks Checklist (3h total)**
+- [ ] Integrate a **charting library**
+- [ ] Create a pie chart component
+- [ ] Pass categorized data to the chart
+- [ ] Display expense breakdown by category
 
-* [ ] Implement drag & drop or file picker
-* [ ] Parse CSV files and convert to transaction objects
-* [ ] Parse Excel files and convert to transaction objects with merchant info
+### **Day 12: Adding More Financial Insights**
 
-**Recap**
+- [ ] Group transactions by month
+- [ ] Create a line chart for spending trends
+- [ ] Identify top merchants by spend
+- [ ] Build a "Top Merchants" component
 
-* Can read files from browser
-* Converted CSV/Excel into usable JS objects
-* Merchant info included for analysis
+### **Day 13: Designing the Dashboard Layout**
 
----
+- [ ] Compose all components into a cohesive layout
+- [ ] Apply basic styling for readability
+- [ ] Ensure data flows correctly between components
+- [ ] Create a professional-looking financial dashboard
 
-### **Day 5 – Data Cleaning & Standardization**
+### **Day 14: Polishing & Presentation**
 
-**Goal:** Prepare clean, standardized transaction data.
+- [ ] Add error handling for invalid files
+- [ ] Practice explaining my project
+- [ ] Prepare my "learning journey" story
+- [ ] Celebrate completing the 14-day challenge! 🎉
 
-**Learning Checklist (3h total)**
+## 🎯 Success Metrics
 
-* [ ] String manipulation (`split`, `trim`, `toLowerCase`) (45 min)
-* [ ] Date parsing and formatting (`Date()` and `toLocaleDateString`) (60 min)
-* [ ] Type conversion (`Number()`) (45 min)
-* [ ] Error handling with `try…catch` (30 min)
-
-**Project Tasks Checklist (3h total)**
-
-* [ ] Normalize merchant names and categories
-* [ ] Standardize dates and amounts
-* [ ] Remove empty or invalid rows
-
-**Recap**
-
-* Learned how to clean and normalize raw data
-* Can handle errors in parsing or conversion
-* Data ready for aggregation
-
----
-
-### **Day 6 – Derived Data & Aggregation**
-
-**Goal:** Transform transactions into visualizable data objects.
-
-**Learning Checklist (2h total)**
-
-* [ ] Derived data concept: summaries, aggregation (45 min)
-* [ ] Modular functions and reusable code (45 min)
-* [ ] Testing transformations (30 min)
-
-**Project Tasks Checklist (4h total)**
-
-* [ ] Calculate totals: income, expense, saving
-* [ ] Group by category, day, merchant
-* [ ] Create `prepareData()` function with all derived data
-
-**Recap**
-
-* Can compute aggregates for charts
-* Built a single function to prepare all derived data for visualization
-* Data structure ready for Chart.js
+- [ ] Working financial dashboard prototype
+- [ ] Ability to explain key JavaScript concepts
+- [ ] Understanding of how data flows through an application
+- [ ] Confidence to discuss technical concepts in interviews
 
 ---
 
-### **Day 7 – Integration Practice**
-
-**Goal:** Combine all logic into one workflow.
-
-**Learning Checklist (2h total)**
-
-* [ ] Import/export JS modules (30 min)
-* [ ] Debugging and console tips (60 min)
-* [ ] Review all previous concepts (30 min)
-
-**Project Tasks Checklist (4h total)**
-
-* [ ] Import all modules (parse, clean, analyze)
-* [ ] Run full flow with sample files
-* [ ] Console log final summary object
-
-**Recap**
-
-* Full pipeline: file → parse → clean → analyze
-* Ready to connect to charts
-* Core JS logic complete
-
----
-
-# **Week 2 — Visualization & App Integration**
-
----
-
-### **Day 8 – Chart.js Basics**
-
-**Goal:** Learn Chart.js and create initial static charts.
-
-**Learning Checklist (3h total)**
-
-* [ ] Chart.js setup in Next.js (30 min)
-* [ ] Chart types: bar, doughnut, line (60 min)
-* [ ] Chart configuration: datasets, labels, colors (60 min)
-* [ ] Static chart testing (30 min)
-
-**Project Tasks Checklist (3h total)**
-
-* [ ] Render one static donut chart
-* [ ] Render one static column chart
-* [ ] Experiment with colors, labels, and tooltips
-
-**Recap**
-
-* Can create charts in the browser
-* Understand datasets and chart options
-* Ready to feed dynamic data
-
----
-
-### **Day 9 – Connect Data to Charts**
-
-**Goal:** Visualize processed transaction data dynamically.
-
-**Learning Checklist (2h total)**
-
-* [ ] DOM manipulation (`getElementById`) (45 min)
-* [ ] Event listeners for file uploads (45 min)
-* [ ] Chart updates with new data (30 min)
-
-**Project Tasks Checklist (4h total)**
-
-* [ ] Donut chart: expense by category
-* [ ] Column chart: expense by day
-* [ ] Bar chart or table: expense by merchant
-
-**Recap**
-
-* Charts reflect actual transaction data
-* Dynamic updates on file upload work
-
----
-
-### **Day 10 – Display Single Value Summaries**
-
-**Goal:** Show total income, total expense, and saving.
-
-**Learning Checklist (2h total)**
-
-* [ ] DOM updates: `innerText`, `innerHTML` (60 min)
-* [ ] Number formatting (`toLocaleString`) (60 min)
-
-**Project Tasks Checklist (4h total)**
-
-* [ ] Total income card
-* [ ] Total expense card
-* [ ] Total saving card
-
-**Recap**
-
-* Summary cards working
-* Dynamic values update correctly with charts
-
----
-
-### **Day 11 – Dynamic Updates & Event Handling**
-
-**Goal:** Refresh dashboard on new file uploads.
-
-**Learning Checklist (2h total)**
-
-* [ ] Event listeners (`change`, `drop`) (45 min)
-* [ ] JS functions to trigger data pipeline (45 min)
-* [ ] Updating charts/cards efficiently (30 min)
-
-**Project Tasks Checklist (4h total)**
-
-* [ ] Connect file upload to `prepareData()`
-* [ ] Update charts dynamically
-* [ ] Update summary cards dynamically
-
-**Recap**
-
-* Dashboard fully reactive
-* Can upload multiple files, charts update automatically
-
----
-
-### **Day 12 – Data Persistence**
-
-**Goal:** Save and reload processed data with localStorage.
-
-**Learning Checklist (2h total)**
-
-* [ ] `localStorage` basics (30 min)
-* [ ] JSON stringify and parse (30 min)
-* [ ] Reloading charts from stored data (60 min)
-
-**Project Tasks Checklist (4h total)**
-
-* [ ] Save prepared data on every upload
-* [ ] Load stored data on page reload
-* [ ] Verify charts and cards restore correctly
-
-**Recap**
-
-* Users’ data persists between sessions
-* Full app state can reload without re-uploading
-
----
-
-### **Day 13 – Error Handling & Testing**
-
-**Goal:** Make app robust to invalid inputs.
-
-**Learning Checklist (2h total)**
-
-* [ ] Defensive programming (30 min)
-* [ ] Error handling for missing columns or invalid data (60 min)
-* [ ] Testing multiple edge cases (30 min)
-
-**Project Tasks Checklist (4h total)**
-
-* [ ] Handle invalid/missing files
-* [ ] Alert user for errors
-* [ ] Ensure console/logs are informative
-
-**Recap**
-
-* App handles invalid data gracefully
-* Dashboard is stable and reliable
-
----
-
-### **Day 14 – Deployment & Showcase**
-
-**Goal:** Launch and document the project.
-
-**Learning Checklist (2h total)**
-
-* [ ] Git basics: commit, push, branches (30 min)
-* [ ] Deploy Next.js app on Vercel (60 min)
-* [ ] Writing README & project description (30 min)
-
-**Project Tasks Checklist (4h total)**
-
-* [ ] Push code to GitHub
-* [ ] Deploy live app on Vercel
-* [ ] Prepare demo summary for portfolio/WeCamp
-
-**Recap**
-
-* Fully deployed, shareable dashboard
-* Project documented and ready for showcase
+*This plan is designed to build my technical confidence and create tangible evidence of my learning journey. One day at
+a time!* 🚀
